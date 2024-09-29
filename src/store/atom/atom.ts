@@ -1,8 +1,13 @@
 import { atom } from 'recoil'
 
-type FormDataValueType = FormDataEntryValue | null;
-
-export const currentQueryAtom = atom<FormDataValueType>({
+export const currentQueryAtom = atom({
     key: "currentQueryAtom",
     default: "" 
+})
+
+export const currentDataAtom = atom({
+    key: 'currentDataAtom',
+    default: {
+        children: []
+    }
 })

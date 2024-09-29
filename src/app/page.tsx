@@ -3,9 +3,9 @@ import SearchPage from "./search/page";
 
 export default function Home() {
   return (
-    <div className="h-screen bg-black">
+    <div className="h-full bg-black">
       <Landing />
-      <SearchPage />
+      <div className="pb-6"></div>
     </div>
   );
 }
