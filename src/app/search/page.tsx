@@ -1,8 +1,7 @@
-
 import Search from '@/components/ui/Search'
 import React from 'react'
 
-const SearchPage = () => {
+const SearchPage = () => { 
   return (
     <div>
       <Search />

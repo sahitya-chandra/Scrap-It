@@ -11,7 +11,7 @@ export async function search(q: FormDataEntryValue) {
     }
 
     try {
-        const response = await axiosInstance.get(`/search?q=${q}&sort=hot&limit=4&type=link&restrict_sr=false`, {
+        const response = await axiosInstance.get(`/search?q=${q}&sort=hot&limit=5&type=link&restrict_sr=false`, {
             headers: {
               Authorization: `Bearer ${token}`,
               'User-Agent': 'ChangeMeClient/0.1 by YourUsername',

@@ -1,5 +1,4 @@
 import Landing from "@/components/ui/Landing";
-import SearchPage from "./search/page";
 
 export default function Home() {
   return (
