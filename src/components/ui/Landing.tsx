@@ -32,13 +32,13 @@ const Landing = () => {
     }
 
   return (
-    <div className='h-full px-14 pt-12 pb-44 flex flex-col justify-start items-center gap-24 overflow-hidden'>
+    <div className='max-h-fit lg:h-full px-14 pt-12 pb-44 flex flex-col justify-start items-center gap-24 overflow-hidden'>
         {isLoading ? <div className='h-full mt-32 mb-20'><Spinner color='white' size='xl'/></div> :(<>
             <div className='flex flex-col items-center'>
-                <h1 className='p-3 text-white font-sans font-extrabold text-7xl'>A Reddit Scrapper...</h1>
-                <h2 className='text-zinc-600 font-sans text-2xl'>Get relevent reddit posts according to your query</h2>
+                <h1 className='p-3 text-white font-sans font-extrabold text-3xl lg:text-7xl'>A Reddit Scrapper...</h1>
+                <h2 className='text-zinc-600 font-sans text-md lg:text-2xl '>Get relevent reddit posts according to your query</h2>
             </div>
-            <form className='w-1/2 flex gap-3' onSubmit={handleSubmit}>
+            <form className='w-full lg:w-1/2 flex gap-3 ' onSubmit={handleSubmit}>
                 <Input type='text' name='q' placeholder='Ask anything.....' className='text-white' required />
                 <IconButton
                     type='submit'

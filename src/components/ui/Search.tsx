@@ -42,7 +42,7 @@ const Search = () => {
       </div>
       <div className='p-5 flex flex-col gap-7'>
         {children.map((item: {data: RedditData}) => (
-          <div key={item.data.id} className='w-full h-full p-6 bg-orange-500 text-white font-sans rounded-xl border-white border-solid border overflow-hidden shadow-md shadow-white'
+          <div key={item.data.id} className='w-full h-full p-6 bg-indigo-600 text-white font-sans rounded-xl border-white border-solid border overflow-hidden shadow-md shadow-white'
             // onClick={async () => {
             //   await comments(item.data.id)
             //   router.push('/comments')
@@ -57,7 +57,7 @@ const Search = () => {
               <div className='bg-transparent text-3xl font-bold mt-3 mb-3'>{item.data.title}</div>
               <p className='bg-transparent leading-5 text-md pl-2'>{truncateDescription(item.data.selftext)}</p>
               <div className='max-w-fit max-h-fit mt-3 bg-transparent flex gap-5 items-center'>
-                <div className='max-w-fit ml-2 px-2 py-1 flex gap-4 bg-orange-300 rounded-md'>
+                <div className='w-full lg:max-w-fit ml-2 px-2 py-1 flex gap-4 bg-indigo-400 rounded-md'>
                   <ArrowBigUp className='bg-transparent '/>
                   <span className='bg-transparent'>{item.data.ups}</span>
                   <span className='border-r'></span>
@@ -65,7 +65,7 @@ const Search = () => {
                   <span className='bg-transparent'>{item.data.num_comments}</span>
                 </div>
                 <Link href={item.data.url}>
-                  <button className='px-2 py-1 bg-blue-600 rounded-md hover:bg-blue-300 cursor-pointer'>Post Redirect</button>
+                  <button className='px-2 py-1 bg-emerald-400 rounded-md hover:bg-emerald-500 cursor-pointer'>Comments</button>
                 </Link>
               </div>
             </div> 
