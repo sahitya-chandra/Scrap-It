@@ -5,6 +5,7 @@ import { Providers } from "./providers";
 import Navbar from "@/components/ui/Navbar";
 import RecoilContextProvider from "@/lib/RecoilContextProvider";
 import Footer from "@/components/ui/Footer";
+import { Analytics } from "@vercel/analytics/next"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -39,6 +40,7 @@ export default function RootLayout({
             <Footer />
           </Providers>
         </RecoilContextProvider>
+        <Analytics />
       </body>
     </html>
   );
